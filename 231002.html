@@ -4,28 +4,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style></style>
+  <style>
+    *{
+      margin: 0;
+      box-sizing: border-box;
+    }
+    #root{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2vw;
+    }
+    .menu{
+      width: 90vw;
+      height: 20vh;
+      display: flex;
+    }
+    .menu > div{
+      width: 10vw;
+      height: 5vh;
+      background-color: bisque;
+      margin: 1vw;
+      color: lightgray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+    }
+
+    h1{
+      position: relative;
+      font-size: 8rem;
+      text-align: center;
+      right: 8vw;
+    }
+
+    #root > div:nth-child(3){
+      position : relative;
+      left : 50vw;
+    }
+
+  </style>
 </head>
 <body>
   <div id="root">
 
-    <div class="class">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+    <div class="menu">
+      <div>HOME</div>
+      <div>MAP</div>
+      <div>HOTEL</div>
+      <div>PLANE</div>
+      <div>GUIDE</div>
+      <div>CONTACT</div>
     </div>
 
-    <h1></h1>
+    <h1>UANS TRIP</h1>
 
     <div></div>
 
     <div>
       <input type="id" placeholder="ID를 입력하세요">
       <input type="password" placeholder="비밀번호를 입력하세요">
-      <input type="button" value="">
+      <input type="submit">
     </div>
 
     <div>
