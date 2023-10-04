@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    #root{
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    #root > div:nth-child(1){
+      font-size: 2rem;
+    }
+
+    #root > div:nth-child(2){
+      display: flex;
+    }
+
+    #root > div:nth-child(2)>div{
+      background-color: antiquewhite;
+      width: 6vw;
+      height: 2vh;
+      margin: 2vw;
+      text-align: center;
+    }
+
+    #root > div:nth-child(3){
+      position: relative;
+      top: 8vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .banner{
+      width: 50vw;
+      height: 20vh;
+      background-color: antiquewhite;
+      position: relative;
+      top: 15vh;
+      right: 60vw;
+      background-image: url(https://www.expedia.co.kr/stories/wp-content/uploads/2022/07/13-8.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .footer{
+      width: 80vw;
+      height: 20vh;
+      background-color: azure;
+      position: relative;
+      top : 60vh;
+      right: 60vw;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div>ANHEE <br> TRIP</div>
+
+    <div>
+      <div>HOME</div>
+      <div>MAP</div>
+      <div>PLANE</div>
+      <div>HOTEL</div>
+      <div>CONTACT</div>
+    </div>
+
+    <div>
+      <input type="id" placeholder="ID를 입력하세요">
+      <input type="password" placeholder="비밀번호를 입력하세요">
+      <input type="submit">
+    </div>
+
+    <div class="banner"></div>
+
+    <div class="footer"></div>
+
+  </div>
+</body>
+</html>
