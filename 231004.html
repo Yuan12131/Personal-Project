@@ -40,7 +40,7 @@
       flex-direction: column;
     }
     
-    .banner{
+    #banner{
       width: 50vw;
       height: 40vh;
       background-color: antiquewhite;
@@ -82,7 +82,7 @@
       <input type="submit">
     </div>
 
-    <div class="banner"></div>
+    <div id="banner"></div>
 
     <div class="footer"></div>
   </div>
@@ -97,6 +97,16 @@
         alert("retry")
       }
     })
+
+    let banner = document.getElementById("banner")
+    console.log(banner)
+
+    banner.addEventListener("click",open)
+
+    function open() {
+      location.href = "http://www.naver.com";
+    }
+
   </script>
 </body>
 </html>
