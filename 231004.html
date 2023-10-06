@@ -77,15 +77,26 @@
     </div>
 
     <div>
-      <input type="id" placeholder="ID를 입력하세요">
-      <input type="password" placeholder="비밀번호를 입력하세요">
+      <input type="ID" id="ID" placeholder="ID">
+      <input type="password" id="password" placeholder="password">
       <input type="submit">
     </div>
 
     <div class="banner"></div>
 
     <div class="footer"></div>
-
   </div>
+  <script>
+    ID = document.getElementById("ID")
+    password = document.getElementById("password")
+
+    ID + password.addEventListener('change', function(){
+      if (ID.value === "123" && password.value === "123") {
+        alert("hello")
+      } else if (ID.value !== "123" | password.value !== "123"){
+        alert("retry")
+      }
+    })
+  </script>
 </body>
 </html>
